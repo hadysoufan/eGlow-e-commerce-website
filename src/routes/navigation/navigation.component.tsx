@@ -16,11 +16,9 @@ import {
 } from './navigation.styles';
 
 const Navigation = () => {
-  const currentUser = useSelector(selectCurrentUser);
-
-  const isCartOpen = useSelector(selectIsCartOpen);
-
   const dispatch = useDispatch();
+  const currentUser = useSelector(selectCurrentUser);
+  const isCartOpen = useSelector(selectIsCartOpen);
 
   const signOutUser = () => dispatch(signOutStart());
 
@@ -28,7 +26,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          <CrwnLogo />
+          <CrwnLogo className="logo" />
         </LogoContainer>
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>
