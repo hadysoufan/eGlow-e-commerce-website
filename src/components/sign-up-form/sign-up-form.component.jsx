@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {SignUpContainer} from "./sign-up-form.styles..jsx";
+import { SignUpContainer } from './sign-up-form.styles';
 import Button from '../button/button.component';
 import { useDispatch } from 'react-redux';
 

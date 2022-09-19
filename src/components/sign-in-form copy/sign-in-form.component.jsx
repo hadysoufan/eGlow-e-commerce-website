@@ -10,8 +10,6 @@ import {
   emailSignInStart,
 } from '../../store/user/user.action';
 
-
-
 const defaultFormFields = {
   email: '',
   password: '',
