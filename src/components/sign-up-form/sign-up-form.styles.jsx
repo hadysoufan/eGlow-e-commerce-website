@@ -5,6 +5,14 @@ export const SignUpContainer = styled.div`
   flex-direction: column;
   width: 380px;
 
+  @media screen and (max-width: 800px) {
+    width:90%;
+    display:block;
+    position:relative;
+    right:440px;
+    top:420px
+  }
+
   h2 {
     margin: 10px 0;
   }
