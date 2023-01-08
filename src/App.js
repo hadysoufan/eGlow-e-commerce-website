@@ -4,8 +4,17 @@ import Home from './routes/home/home.component';
 import Authentication from './components/authentication/authentication.component';
 import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.components';
+import { useEffect } from 'react';
+import { checkUserSession } from './store/user/user.action';
+import { useDispatch } from 'react-redux';
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    checkUserSession();
+  }, [dispatch]);
+
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
